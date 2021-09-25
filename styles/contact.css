@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -32,16 +32,8 @@ body {
   align-items: center;
 }
 
-.main h1 {
-  color: var(--main-bg-color);
-  text-transform: none;
-  font-weight: 400;
-  font-size: 3vw;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
+.main {
   cursor: pointer;
-  text-shadow: 1px 1px 2px #a1a0a0;
 }
 
 #contact-img {
@@ -133,7 +125,7 @@ body {
   transform: translateY(35%);
 }
 
-#adress-phone{
+#adress-phone {
   transform: translate(-35%, 35%);
 }
 
@@ -148,7 +140,8 @@ body {
   font-size: 0.75rem;
 }
 
-.adress-item p:hover, a:hover {
+.adress-item p:hover,
+a:hover {
   color: var(--main-bg-color);
 }
 
@@ -169,7 +162,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   margin-bottom: 10vh;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -191,7 +184,8 @@ body {
   height: 35px;
 }
 
-.form-items input, .form-items textarea {
+.form-items input,
+.form-items textarea {
   border: var(--subtitle3-color) 2px solid;
   border-radius: 3px;
   padding: 15px;
@@ -234,15 +228,14 @@ body {
   color: var(--main-bg-color);
 }
 
-
-.form-items input:focus:invalid, .form-items textarea:focus:invalid  {
+.form-items input:focus:invalid,
+.form-items textarea:focus:invalid {
   background-color: rgba(235, 213, 213, 0.5);
 }
-.form-items input:required:focus:valid, .form-items textarea:required:focus:valid {
-  background-color:rgba(203, 236, 203, 0.5);
+.form-items input:required:focus:valid,
+.form-items textarea:required:focus:valid {
+  background-color: rgba(203, 236, 203, 0.5);
 }
-
-
 
 /* Footer */
 
@@ -252,7 +245,6 @@ footer {
 
 /* Responsive */
 
-
 @media screen and (max-width: 1100px) and (min-width: 780px) {
   .adress-item-container {
     flex-flow: column nowrap;
@@ -260,7 +252,6 @@ footer {
 }
 
 @media screen and (min-width: 780px) {
-
   .main {
     height: 35vh;
   }
@@ -276,11 +267,11 @@ footer {
     background-color: var(--subtitle3-color);
   }
 
-  .adress-container a, .adress-container p {
+  .adress-container a,
+  .adress-container p {
     font-size: 18px;
     font-weight: 500;
   }
-
 
   .map {
     height: 100%;
@@ -331,7 +322,6 @@ footer {
   text-align: justify;
 }
 
-
 .modal-bg-active {
   visibility: visible;
   opacity: 1;
@@ -365,24 +355,24 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 780px) {
   .adress-container {
     height: 50vh;
   }
-  
+
   .adress-container h2 {
     color: var(--subtitle3-color);
   }
 
-  .adress-item p, .adress-item a  {
-    font-size:1.2rem
+  .adress-item p,
+  .adress-item a {
+    font-size: 1.2rem;
   }
 
-  .adress-item p:hover, .adress-item a:hover {
+  .adress-item p:hover,
+  .adress-item a:hover {
     color: var(--subtitle3-color);
   }
-  .
 }
 
 @media screen and (max-width: 680px) {
@@ -406,16 +396,17 @@ footer {
     height: 45%;
   }
 
-@media screen and (min-width: 1400px) {
-  .adress-container a, .adress-container p {
-    font-size: 1.5rem;
+  @media screen and (min-width: 1400px) {
+    .adress-container a,
+    .adress-container p {
+      font-size: 1.5rem;
+    }
   }
-}
 
-
-@media screen and (max-width: 400px) {
-  .adress-item-container {
-    flex-flow: column;
-    margin-top: 10px;
+  @media screen and (max-width: 400px) {
+    .adress-item-container {
+      flex-flow: column;
+      margin-top: 10px;
+    }
   }
 }

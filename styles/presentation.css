@@ -6,21 +6,15 @@
   object-fit: cover;
 }*/
 
-#galleryHeader h1 {
-  background: url('../ressources/restoBanner.jpg') center/cover;
-  text-align: center;
+#galleryHeader {
+  background: url("../ressources/restoBanner.jpg") center/cover;
   width: 100%;
   margin: 0px auto;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: beige;
-  text-shadow: 2px 2px 3px black;
-  font-size: 2rem;
-  font-family: montserrat, sans-serif;
 }
-
 
 /* text and img */
 /*
@@ -34,34 +28,32 @@
   padding: 20px;
   }  */
 
-
 .image-texte-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-  .parag {
-    line-height: 1.5;
-    text-indent: 15px;
-    margin: 10px;
-    font-size: 16px;
-    font-family: raleway , sans-serif;
-    color:  rgb(25, 25, 25);
-    width: 500px;
-    height: auto;
-    border: 2px solid #F9C9C8;
-    border-radius: 5px;
-    padding: 10px    
-  }
+.parag {
+  line-height: 1.5;
+  text-indent: 15px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: raleway, sans-serif;
+  color: rgb(25, 25, 25);
+  width: 500px;
+  height: auto;
+  border: 2px solid #f9c9c8;
+  border-radius: 5px;
+  padding: 10px;
+}
 
-  .image-texte-container img {
+.image-texte-container img {
   width: 50%;
   height: auto;
   margin-right: 10px;
   border-radius: 15px;
   margin: 10px;
-  }
-
+}
 
 .small-titles {
   display: block;
@@ -81,37 +73,29 @@
 }
 
 #foot {
- position: relative;
- margin-bottom: -180vh;
+  position: relative;
+  margin-bottom: -180vh;
 }
 
-  
-  /* animations texte presentation */
-
+/* animations texte presentation */
 
 .parag:hover {
-  background-color: #F9C9C8;
+  background-color: #f9c9c8;
   font-size: 17px;
   padding: 10px;
   border-radius: 12px;
-  transition: transform 0,3s ease-in-out;
+  transition: transform 0, 3s ease-in-out;
 }
 
 .image-texte-container img:hover {
   border-radius: 20px;
   background: #bdbcbc;
-  box-shadow:  10px 10px 20px #a1a0a0,
-             -10px -10px 20px #d9d8d8;
+  box-shadow: 10px 10px 20px #a1a0a0, -10px -10px 20px #d9d8d8;
 }
-
-
-
 
 /* presentation responsive */
 
 @media screen and (max-width: 1024px) {
-
-
   .image-texte-container {
     display: flex;
     flex-flow: column;
@@ -129,15 +113,9 @@
   footer {
     display: none !important;
   }
-
 }
 
-
-
-
 @media screen and (max-width: 681px) {
-
-
   .image-texte-container {
     display: flex;
     flex-flow: column;
@@ -151,14 +129,9 @@
     max-width: 80%;
     margin-bottom: 30px;
   }
-
- 
-
 }
 
 @media screen and (max-width: 768px) {
-
-
   .image-texte-container {
     display: flex;
     flex-flow: column;
@@ -172,5 +145,4 @@
     max-width: 80%;
     margin-bottom: 30px;
   }
-
 }
